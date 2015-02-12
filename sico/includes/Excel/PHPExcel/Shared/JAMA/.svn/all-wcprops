@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/Shared/JAMA
+END
+QRDecomposition.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/Shared/JAMA/QRDecomposition.php
+END
+CholeskyDecomposition.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/Shared/JAMA/CholeskyDecomposition.php
+END
+CHANGELOG.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/Shared/JAMA/CHANGELOG.TXT
+END
+SingularValueDecomposition.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/Shared/JAMA/SingularValueDecomposition.php
+END
+LUDecomposition.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/Shared/JAMA/LUDecomposition.php
+END
+Matrix.php
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/Shared/JAMA/Matrix.php
+END
+EigenvalueDecomposition.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/Shared/JAMA/EigenvalueDecomposition.php
+END

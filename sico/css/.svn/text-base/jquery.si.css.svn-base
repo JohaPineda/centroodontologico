@@ -1,0 +1,38 @@
+.si{
+	width:100%;	
+	margin-top: 45px;
+}
+div.si label.cabinet {
+	width: 194px;
+	height: 35px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	z-index: 3;	
+}
+div.si label.cabinet input {
+	position: relative;
+	top: 0 !important;
+	height: 100%;
+	width: 100% !important;
+	z-index: 2;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+div.si div.uploadButton {
+	position: relative;
+	margin: -35px auto;
+	width: 194px;
+}
+div.si div.uploadButton div {
+	width: 194px;
+	height: 35px;
+	background: url(../images/button.png) 0 0 no-repeat;
+	z-index: 1;
+}
+div.si label.selectedFile {
+	margin-left: 5px;
+	line-height: 35px;
+}

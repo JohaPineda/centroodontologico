@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+.barraf{
+    position:fixed;
+    top:0;
+    left: 30%;
+    right: 30%;
+    height:50px;
+    width:40%;
+    text-align:center;   
+    font-size: 15px;
+    z-index:9999;
+    display:none;
+    background-color: #7cbcd6;
+    -moz-box-shadow: 1px 0px 6px #000080;
+    -webkit-box-shadow: 1px 0px 6px #000080;
+    box-shadow: 1px 0px 6px #000080;
+    padding-top:10px;    
+    -moz-border-radius: 0px 0px 2px 2px / 0px 12px 12px 12px;   
+}
+

@@ -1,0 +1,31 @@
+<?php
+
+defined('EXECG__') or die('<h1>404 - <strong>Not Found</strong></h1>');
+
+class IndexController extends ControllerBase {
+
+    public function main() {
+        $this->view->setTemplate('inicio');
+        $this->document->addScript('editorareas');
+        $this->document->setHeader();
+        $this->view->show();
+    }
+    
+    public function editorHtml() {
+        $this->view->setTemplate('inico');
+        $this->document->addScript('editorareas');
+        $this->document->setHeader();
+        $this->view->show();
+    }
+
+    public function exportExcel() {
+        $this->view->setTemplate('logo');
+        $this->document->setHeader();
+        $objPHPExcel = PHPExcel_IOFactory::load("test.xlsx");        
+        $this->view->setVars('excelito', $objPHPExcel);
+        $this->view->show();
+    }
+
+}
+
+?>

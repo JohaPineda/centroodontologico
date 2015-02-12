@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage
+END
+Wincache.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/Wincache.php
+END
+SQLite3.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/SQLite3.php
+END
+ICache.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/ICache.php
+END
+DiscISAM.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/DiscISAM.php
+END
+MemoryGZip.php
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/MemoryGZip.php
+END
+PHPTemp.php
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/PHPTemp.php
+END
+SQLite.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/SQLite.php
+END
+Memcache.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/Memcache.php
+END
+Igbinary.php
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/Igbinary.php
+END
+Memory.php
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/Memory.php
+END
+CacheBase.php
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/CacheBase.php
+END
+APC.php
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/APC.php
+END
+MemorySerialized.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/centroodontologico/!svn/ver/2/includes/Excel/PHPExcel/CachedObjectStorage/MemorySerialized.php
+END

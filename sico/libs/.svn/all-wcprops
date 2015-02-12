@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/centroodontologico/!svn/ver/4/libs
+END
+Validacion.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/centroodontologico/!svn/ver/2/libs/Validacion.php
+END
+ModelBase.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/centroodontologico/!svn/ver/2/libs/ModelBase.php
+END
+ControllerBase.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/centroodontologico/!svn/ver/4/libs/ControllerBase.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/centroodontologico/!svn/ver/2/libs/index.html
+END
+Config.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/centroodontologico/!svn/ver/2/libs/Config.php
+END
+View.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/centroodontologico/!svn/ver/2/libs/View.php
+END
+FrontController.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/centroodontologico/!svn/ver/2/libs/FrontController.php
+END
+ControllerPublic.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/centroodontologico/!svn/ver/2/libs/ControllerPublic.php
+END

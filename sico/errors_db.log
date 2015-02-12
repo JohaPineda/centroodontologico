@@ -1,0 +1,7 @@
+
+
+ Error en la consulta: select * from citas where 
+            idespecialista= and dia=16 and mes=10 and anio=2014 and estado='espera' 
+ERROR:  error de sintaxis en o cerca de «and»
+LINE 2:             idespecialista= and dia=16 and mes=10 and anio=2...
+                                    ^

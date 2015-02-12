@@ -1,0 +1,199 @@
+
+
+ Error en la consulta: select u.idusuario, e.idespecialista, e.nombre, c.nombreconsultorio, s.nombreservicio
+from especialistas e, consultorios c, servicios s, usuarios u
+where e.idconsultorio=c.idconsultorio and e.idservicio=s.idservicio and e.idusuario=u.idusuario 
+ERROR:  no existe la columna e.idusuario
+LINE 3: ...c.idconsultorio and e.idservicio=s.idservicio and e.idusuari...
+                                                             ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * from citas where idespecialista=1 and dia= and mes=11 
+ERROR:  error de sintaxis en o cerca de «and»
+LINE 1: ...lect * from citas where idespecialista=1 and dia= and mes=11
+                                                             ^
+
+ Error en la consulta: select * from citas where idespecialista=1 and dia= and mes=11 
+ERROR:  error de sintaxis en o cerca de «and»
+LINE 1: ...lect * from citas where idespecialista=1 and dia= and mes=11
+                                                             ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * from citas where idespecialista=1 and dia= and mes=11 
+ERROR:  error de sintaxis en o cerca de «and»
+LINE 1: ...lect * from citas where idespecialista=1 and dia= and mes=11
+                                                             ^
+
+ Error en la consulta: select nextval('especialistas_idespecialista_seq'::regclass) limit 1 
+ERROR:  no existe la relación «especialistas_idespecialista_seq»
+LINE 1: select nextval('especialistas_idespecialista_seq'::regclass)...
+                       ^
+
+ Error en la consulta: insert into especialistas
+        values(,32,'jhon mendex',1,1) 
+ERROR:  error de sintaxis en o cerca de «,»
+LINE 2:         values(,32,'jhon mendex',1,1)
+                       ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^
+
+ Error en la consulta: select * 
+        from  citas c,
+              especialistas e,
+              servicios s
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              c.idpaciente =   
+ERROR:  error de sintaxis al final de la entrada
+LINE 7:               c.idpaciente =  
+                                      ^

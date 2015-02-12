@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/centroodontologico/!svn/ver/24/views/usuarios
+END
+addEspecialista.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/centroodontologico/!svn/ver/28/views/usuarios/addEspecialista.php
+END
+editarpaciente.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/centroodontologico/!svn/ver/27/views/usuarios/editarpaciente.php
+END
+administrador.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/centroodontologico/!svn/ver/27/views/usuarios/administrador.php
+END
+editarespecialistas.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/centroodontologico/!svn/ver/27/views/usuarios/editarespecialistas.php
+END
+pacientes.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/centroodontologico/!svn/ver/24/views/usuarios/pacientes.php
+END
+addpaciente.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/centroodontologico/!svn/ver/28/views/usuarios/addpaciente.php
+END

@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule (.*)_(.*).html index.php?controlador=$1&accion=$2
+RewriteRule (.*)_(.*)_(.*)_(.*) index.php?controlador=$1&accion=$2&$3=$4
+RewriteRule (.*).html index.php?controlador=$1

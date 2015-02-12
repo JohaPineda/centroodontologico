@@ -1,0 +1,998 @@
+ 
+Controlador: IndexController 
+Accion: main 
+ 
+Controlador: IndexController 
+Accion: main 
+ 
+Controlador: IndexController 
+Accion: main 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+
+select nextval('sesiones_idsesion_seq'::regclass) from sesiones limit 1 
+
+insert into sesiones values (175,2,'2013-04-15 20:32:30','131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a',1,'127.0.0.1','2013-04-15 20:32:30', 1366075950) 
+ 
+Controlador: IndexController 
+Accion: main 
+
+select * from sesiones where nombre='131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a' 
+
+update sesiones set updatedat='2013-04-15 20:32:31', lastactivity=1366075951 where nombre='131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a' 
+ 
+Controlador: AdmoncitasController 
+Accion: administrarCitas 
+
+select * from sesiones where nombre='131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a' 
+
+update sesiones set updatedat='2013-04-15 20:32:35', lastactivity=1366075955 where nombre='131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a' 
+
+select p.idpaciente,p.nombre,p.cedula, c.hora, c.idcita, s.nombreservicio,e.nombre as medico,cast(concat(c.anio,'/',c.mes,'/',c.dia)  as date) as fecha,c.estado
+            FROM  
+                pacientes p,  
+                citas c, 
+                especialistas e, 
+                servicios s
+            WHERE   
+                c.idpaciente = p.idpaciente AND
+                c.idespecialista = e.idespecialista AND    
+                e.idservicio = s.idservicio AND cast(concat(c.anio,'/',c.mes,'/',c.dia)  as date) between '2013-04-15' AND '2013-05-15' 
+
+Resultados: 0 
+ 
+Controlador: ConsultoriosController 
+Accion: main 
+
+select * from sesiones where nombre='131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a' 
+
+update sesiones set updatedat='2013-04-15 20:32:38', lastactivity=1366075958 where nombre='131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a' 
+
+select * from consultorios 
+
+Resultados: 3 
+
+select * from citas where idconsultorio=1 
+
+Resultados: 11 
+
+select * from citas where idconsultorio=15 
+
+Resultados: 0 
+
+select * from citas where idconsultorio=19 
+
+Resultados: 0 
+ 
+Controlador: ServiciosController 
+Accion: main 
+
+select * from sesiones where nombre='131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a' 
+
+update sesiones set updatedat='2013-04-15 20:32:41', lastactivity=1366075961 where nombre='131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a' 
+
+select * from servicios 
+
+Resultados: 3 
+
+select * from especialistas where idservicio=13 
+
+Resultados: 2 
+
+select * from especialistas where idservicio=15 
+
+Resultados: 0 
+
+select * from especialistas where idservicio=16 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: salir 
+
+update sesiones set activo=0, updatedat='2013-04-15 20:32:45', lastactivity=0 where nombre='131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a131e16bdd3e80717a7ccdae1bcb18a96744c382a' 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: IndexController 
+Accion: main 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+select nextval('sesiones_idsesion_seq'::regclass) from sesiones limit 1 
+
+insert into sesiones values (176,2,'2013-04-17 19:23:26','bc26027291814341464100318fcc1cc7539eaee3bc26027291814341464100318fcc1cc7539eaee3bc26027291814341464100318fcc1cc7539eaee3bc26027291814341464100318fcc1cc7539eaee3bc26027291814341464100318fcc1cc7539eaee3bc26027291814341464100318fcc1cc7539eaee3',1,'127.0.0.1','2013-04-17 19:23:26', 1366244606) 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+
+select nextval('sesiones_idsesion_seq'::regclass) from sesiones limit 1 
+
+insert into sesiones values (177,2,'2013-04-17 19:23:29','b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4',1,'127.0.0.1','2013-04-17 19:23:29', 1366244609) 
+ 
+Controlador: IndexController 
+Accion: main 
+
+select * from sesiones where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+update sesiones set updatedat='2013-04-17 19:23:30', lastactivity=1366244610 where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+ 
+Controlador: IndexController 
+Accion: main 
+
+select * from sesiones where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+update sesiones set updatedat='2013-04-17 19:23:35', lastactivity=1366244615 where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+ 
+Controlador: AdmoncitasController 
+Accion: administrarCitas 
+
+select * from sesiones where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+update sesiones set updatedat='2013-04-17 19:23:37', lastactivity=1366244617 where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+select p.idpaciente,p.nombre,p.cedula, c.hora, c.idcita, s.nombreservicio,e.nombre as medico,cast(concat(c.anio,'/',c.mes,'/',c.dia)  as date) as fecha,c.estado
+            FROM  
+                pacientes p,  
+                citas c, 
+                especialistas e, 
+                servicios s
+            WHERE   
+                c.idpaciente = p.idpaciente AND
+                c.idespecialista = e.idespecialista AND    
+                e.idservicio = s.idservicio AND cast(concat(c.anio,'/',c.mes,'/',c.dia)  as date) between '2013-04-17' AND '2013-05-17' 
+
+Resultados: 0 
+ 
+Controlador: ConsultoriosController 
+Accion: main 
+
+select * from sesiones where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+update sesiones set updatedat='2013-04-17 19:23:42', lastactivity=1366244622 where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+select * from consultorios 
+
+Resultados: 3 
+
+select * from citas where idconsultorio=1 
+
+Resultados: 11 
+
+select * from citas where idconsultorio=15 
+
+Resultados: 0 
+
+select * from citas where idconsultorio=19 
+
+Resultados: 0 
+ 
+Controlador: ServiciosController 
+Accion: main 
+
+select * from sesiones where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+update sesiones set updatedat='2013-04-17 19:23:45', lastactivity=1366244625 where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+select * from servicios 
+
+Resultados: 3 
+
+select * from especialistas where idservicio=13 
+
+Resultados: 2 
+
+select * from especialistas where idservicio=15 
+
+Resultados: 0 
+
+select * from especialistas where idservicio=16 
+
+Resultados: 0 
+ 
+Controlador: ServiciosController 
+Accion: main 
+
+select * from sesiones where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+update sesiones set updatedat='2013-04-17 19:23:48', lastactivity=1366244628 where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+
+select * from servicios 
+
+Resultados: 3 
+
+select * from especialistas where idservicio=13 
+
+Resultados: 2 
+
+select * from especialistas where idservicio=15 
+
+Resultados: 0 
+
+select * from especialistas where idservicio=16 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: salir 
+
+update sesiones set activo=0, updatedat='2013-04-17 19:23:51', lastactivity=0 where nombre='b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4b26c6015ec5f450df9da5de9bc9c3a704079dfb4' 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='danny0204' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+
+select nextval('sesiones_idsesion_seq'::regclass) from sesiones limit 1 
+
+insert into sesiones values (178,2,'2013-04-17 19:24:21','b507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2f',1,'127.0.0.1','2013-04-17 19:24:21', 1366244661) 
+ 
+Controlador: IndexController 
+Accion: main 
+
+select * from sesiones where nombre='b507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2f' 
+
+update sesiones set updatedat='2013-04-17 19:24:22', lastactivity=1366244662 where nombre='b507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2f' 
+ 
+Controlador: UserController 
+Accion: salir 
+
+update sesiones set activo=0, updatedat='2013-04-17 19:37:54', lastactivity=0 where nombre='b507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2fb507fd952265eeac566860d6b324ded77c7eae2f' 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: IndexController 
+Accion: main 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='postgres' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='admin' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='postgres' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='postgres' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='postgres' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='homero' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='jhonmendex' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='homero' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='pacientex' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='administrador' and estado='activo' 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: IndexController 
+Accion: main 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='postgres' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: IndexController 
+Accion: main 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: IndexController 
+Accion: main 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='admin' and estado='activo' 
+
+Resultados: 0 
+ 
+Controlador: UserController 
+Accion: Login 
+ 
+Controlador: RegistrarUsuarioController 
+Accion: main 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_unica 
+
+select * from pacientes  where cedula=1032395393 
+
+Resultados: 0 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_unica 
+
+select * from usuarios  where alias='jotagonza' 
+
+Resultados: 0 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_unica 
+
+select * from pacientes  where cedula=1032395393 
+
+Resultados: 0 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_unica 
+
+select * from usuarios  where alias='jotagonza' 
+
+Resultados: 0 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_pattern 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: RegistrarUsuarioController 
+Accion: insertarpaciente 
+
+select nextval('usuarios_idusuario_seq'::regclass) limit 1 
+
+insert into usuarios values(19,2,'jotagonza','6367c48dd193d56ea7b0baad25b19455e529f5ee','Johanna Gonzalez','johapineda7@gmail.com','2014-10-16 19:16:59',1,'2014-10-16 19:16:59',1,'activo') 
+
+select nextval('"pacientes_idPaciente_seq"'::regclass) limit 1 
+
+insert into pacientes values(6,19,'Johanna Gonzalez',1032395393,'johapineda7@gmail.com',NULL,3219095138,'images/defaultuser.jpg','1990-7-4','Kr 23 32 a sur') 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+ 
+Controlador: ValidationController 
+Accion: validar_presencia 
+
+SELECT * FROM usuarios WHERE alias='jotagonza' and estado='activo' 
+
+Resultados: 1 
+
+select nextval('sesiones_idsesion_seq'::regclass) from sesiones limit 1 
+
+insert into sesiones values (179,19,'2014-10-16 19:17:19','8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906',1,'127.0.0.1','2014-10-16 19:17:19', 1413505039) 
+ 
+Controlador: IndexController 
+Accion: main 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:17:21', lastactivity=1413505041 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+ 
+Controlador: IndexController 
+Accion: main 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:18:29', lastactivity=1413505109 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+ 
+Controlador: MiPerfilController 
+Accion: main 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:18:35', lastactivity=1413505115 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+select * from pacientes p left join usuarios u on p.idusuario=u.idusuario where u.idusuario=19 
+
+Resultados: 1 
+ 
+Controlador: CitasController 
+Accion: main 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:19:02', lastactivity=1413505142 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+select * from pacientes where idusuario=19 
+
+select c.idcita, c.hora, c.anio, c.mes, c.dia, c.estado, f.valor,
+	e.nombre, t.nombreconsultorio, s.nombreservicio 
+        from  citas c,
+              especialistas e,
+              servicios s, 
+              consultorios t,
+              facturas f
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              t.idconsultorio = c.idconsultorio and
+              c.idcita = f.idcita and
+              c.idpaciente = 6 
+
+Resultados: 0 
+ 
+Controlador: CitasController 
+Accion: nuevacita 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:19:15', lastactivity=1413505155 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+select * from consultorios 
+
+Resultados: 3 
+
+select * from servicios 
+
+Resultados: 3 
+
+select * from especialistas where idconsultorio=1 and idservicio=13 
+
+Resultados: 1 
+
+select * from servicios where idservicio=13 
+
+select * from citas where 
+            idespecialista=23 and dia=16 and mes=10 and anio=2014 and estado='espera' 
+
+Resultados: 0 
+
+select * from pacientes where idusuario=19 
+
+select c.hora, s.tiempo from citas c, especialistas e, servicios s
+           where c.idpaciente=6 and c.dia=16 and c.mes=10 and c.estado not in ('cancelado') 
+                and c.idespecialista = e.idespecialista
+                and e.idservicio = s.idservicio 
+
+Resultados: 0 
+ 
+Controlador: CitasController 
+Accion: ajaxespecialistas 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:20:23', lastactivity=1413505223 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+select * from especialistas where idconsultorio=15 and idservicio=13 
+
+Resultados: 1 
+
+select * from servicios where idservicio=13 
+
+select * from citas where 
+            idespecialista=25 and dia=16 and mes=10 and anio=2014 and estado='espera' 
+
+Resultados: 0 
+
+select * from pacientes where idusuario=19 
+
+select c.hora, s.tiempo from citas c, especialistas e, servicios s
+           where c.idpaciente=6 and c.dia=16 and c.mes=10 and c.estado not in ('cancelado') 
+                and c.idespecialista = e.idespecialista
+                and e.idservicio = s.idservicio 
+
+Resultados: 0 
+ 
+Controlador: CitasController 
+Accion: ajaxespecialistas 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:20:37', lastactivity=1413505237 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+select * from especialistas where idconsultorio=15 and idservicio=15 
+
+Resultados: 0 
+
+select * from servicios where idservicio=15 
+
+Resultados:  
+
+select * from pacientes where idusuario=19 
+
+select c.hora, s.tiempo from citas c, especialistas e, servicios s
+           where c.idpaciente=6 and c.dia=16 and c.mes=10 and c.estado not in ('cancelado') 
+                and c.idespecialista = e.idespecialista
+                and e.idservicio = s.idservicio 
+
+Resultados: 0 
+ 
+Controlador: CitasController 
+Accion: ajaxespecialistas 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:20:51', lastactivity=1413505251 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+select * from especialistas where idconsultorio=15 and idservicio=13 
+
+Resultados: 1 
+
+select * from servicios where idservicio=13 
+
+select * from citas where 
+            idespecialista=25 and dia=16 and mes=10 and anio=2014 and estado='espera' 
+
+Resultados: 0 
+
+select * from pacientes where idusuario=19 
+
+select c.hora, s.tiempo from citas c, especialistas e, servicios s
+           where c.idpaciente=6 and c.dia=16 and c.mes=10 and c.estado not in ('cancelado') 
+                and c.idespecialista = e.idespecialista
+                and e.idservicio = s.idservicio 
+
+Resultados: 0 
+ 
+Controlador: CitasController 
+Accion: ajaxhorasmes 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:21:14', lastactivity=1413505274 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+select * from servicios where idservicio=13 
+
+select * from citas where 
+            idespecialista=25 and dia=20 and mes=10 and anio=2014 and estado='espera' 
+
+Resultados: 0 
+
+select * from pacientes where idusuario=19 
+
+select c.hora, s.tiempo from citas c, especialistas e, servicios s
+           where c.idpaciente=6 and c.dia=20 and c.mes=10 and c.estado not in ('cancelado') 
+                and c.idespecialista = e.idespecialista
+                and e.idservicio = s.idservicio 
+
+Resultados: 0 
+ 
+Controlador: CitasController 
+Accion: ajaxnowtime 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:21:19', lastactivity=1413505279 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+ 
+Controlador: CitasController 
+Accion: crearcita 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:21:20', lastactivity=1413505280 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+
+        select c.nombreconsultorio, c.idconsultorio, s.nombreservicio, s.idservicio, e.nombre, e.idespecialista, s.valor
+        from    consultorios c,
+                servicios s,
+                especialistas e 
+        where 	c.idconsultorio=15 and 
+                s.idservicio=13 and
+                e.idespecialista=25 and 
+                e.idservicio=s.idservicio 
+ 
+Controlador: CitasController 
+Accion: simulador 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:21:48', lastactivity=1413505308 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+ 
+Controlador: CitasController 
+Accion: pagar 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:22:33', lastactivity=1413505353 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+select * from pacientes where idusuario=19 
+
+select nextval('citas_idcita_seq'::regclass) limit 1 
+
+insert into  citas values(14,25,6,2014,10,20,480,'espera',15) 
+
+select nextval('facturas_idfactura_seq'::regclass) limit 1 
+
+insert into  facturas values(14,14,'2014-10-16','cancelada',139200) 
+
+select c.idcita, c.hora, c.anio, c.mes, c.dia, c.estado, f.valor,
+	e.nombre, t.nombreconsultorio, s.nombreservicio 
+        from  citas c,
+              especialistas e,
+              servicios s, 
+              consultorios t,
+              facturas f                      
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              t.idconsultorio = c.idconsultorio and
+              c.idcita = f.idcita and
+              c.idcita = 14 
+
+select correo, nombre, cedula from pacientes where idusuario=19 
+ 
+Controlador: CitasController 
+Accion: main 
+
+select * from sesiones where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+update sesiones set updatedat='2014-10-16 19:22:43', lastactivity=1413505363 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+
+select * from pacientes where idusuario=19 
+
+select c.idcita, c.hora, c.anio, c.mes, c.dia, c.estado, f.valor,
+	e.nombre, t.nombreconsultorio, s.nombreservicio 
+        from  citas c,
+              especialistas e,
+              servicios s, 
+              consultorios t,
+              facturas f
+        where c.idespecialista = e.idespecialista and
+              e.idservicio     = s.idservicio and   
+              t.idconsultorio = c.idconsultorio and
+              c.idcita = f.idcita and
+              c.idpaciente = 6 
+
+Resultados: 1 
+ 
+Controlador: UserController 
+Accion: salir 
+
+update sesiones set activo=0, updatedat='2014-10-16 19:23:34', lastactivity=0 where nombre='8bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a9068bcdec324112e08690713d14b47f0a0cfcf7a906' 
+ 
+Controlador: UserController 
+Accion: Login 
